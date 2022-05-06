@@ -6,7 +6,7 @@ import copy
 # ADT class decorator should do the below.
 #
 # 0. Make each subclass definition a data-class.
-# 1. Make top class uninstantiatable. -- Not sure how to do this? Over-ride init?
+# 1. Make top class uninstantiatable. -- Not sure how to do this? Over-ride init? Make the top class an abstract base class (using abc python module) ?
 # 2. Top class should not have any members other than class definitions? Not sure how to achieve this?
 # 3. Add dynamic type checking into the sub-class constructors.
 # 4. Note: Looks like we can't call the constructors of other subclasses even though they are defined. This is not allowed by python compiler, which might be a good thing.

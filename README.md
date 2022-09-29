@@ -13,11 +13,12 @@ Most functional programming languages leverage the power of ADTs with pattern ma
 
 ADTs allow you to quickly and concisely define rich data structues and then capture the behavior using pattern matching. 
 
-Pattern matching was introduced in python 3.10 in October'21.
-
 ## Python based ADT
-Refer to the previous work
-Addition of pattern matching in python 3.10
+Refer to the previous work    
+Several previous attempts have been made to bring the goodness of ADTs to python. <1>, <2>, ...
 
+However, all these python mechanisms were developed prior to the introduction of pattern matching to python. The addition of pattern matching to python gives us the flexibility of building ADTs on top of python classes. We use a combination of python classes and python dataclasses to capture the definition of an ADT, and then we can directly use python pattern matching since an ADT is a python class under the hood.
+
+Pattern matching was introduced in python 3.10 in October'21.
 
 ### Examples

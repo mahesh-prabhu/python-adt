@@ -66,35 +66,35 @@ class Tree:
                 print('No Match')
 
 # Creating an empty tree node
-a = Tree.Empty()
+tree_empty = Tree.Empty()
 
 # Create a leaf node with value 1
-b = Tree.Leaf(1)
+tree_leaf1 = Tree.Leaf(1)
 
 # Create a leaf node with value 2
-c = Tree.Leaf(2)
+tree_leaf2 = Tree.Leaf(2)
 
 # Create another leaf node with value 2
-d = Tree.Leaf(2)
+tree_leaf3 = Tree.Leaf(2)
 
 # Checking equality between an empty node and a leaf node.
 # This is False
-print(a == b)
+print(tree_empty == tree_leaf1)
 
 # Checking equality between an empty node and another leaf node.
 # This is False
-print(a == c)
+print(tree_empty == tree_leaf2)
 
 # Checking equality between two leaf nodes with the same value.
 # This is True
-print(c == d)
+print(tree_leaf2 == tree_leaf3)
 
 # Checking equality between two leaf nodes with different values.
 # This is False
-print(b == c)
+print(tree_leaf1 == tree_leaf2)
 
 # Create a Tree
-root = Tree.Node( 1, Tree.Node(3, a,c), Tree.Node(5, b,d))
+root = Tree.Node( 1, Tree.Node(3, tree_empty,tree_leaf2), Tree.Node(5, tree_leaf1,tree_leaf3))
 
 # Traverse the tree in-order and print it using static method
 Tree.print_tree_static_meth( root)
